@@ -20,7 +20,7 @@ import {Play} from '../play/play';
             <a class="ui label blue" href="https://twitter.com/edoardo849">
                 <i class="twitter icon"></i> Follow @edoardo849
             </a>
-            <a class="ui label grey" href="https://twitter.com/edoardo849">
+            <a class="ui label grey" href="https://github.com/edoardo849/dipinto">
                 <i class="github icon"></i> edoardo849
             </a>
             </p>
