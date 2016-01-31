@@ -1,6 +1,6 @@
 {
   "name": "dipinto-server",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An In memory server for the dipinto app",
   "main": "server.js",
   "scripts": {

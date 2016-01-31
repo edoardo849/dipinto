@@ -27,7 +27,6 @@ export class Play implements OnActivate {
     static MAX_TRIALS = 3;
 
     emitter: EventEmitter<any> = EmitterService.get('channel_1');
-
     response: string;
     api: string;
 
@@ -57,11 +56,6 @@ export class Play implements OnActivate {
         return this._callApi();
     }
 
-    logout() {
-        localStorage.removeItem('jwt');
-        this.router.parent.navigateByUrl('/login');
-    }
-
     handleResponse(rsp : Question) {
         this.hasAnswered = true;
         this.isCorrect = rsp.correct;
@@ -69,14 +63,6 @@ export class Play implements OnActivate {
 
         console.log(rsp);
     }
-
-    reloadQuestion() {
-        this._callApi();
-        this.hasAnswered = false;
-        this.isCorrect = false;
-    }
-
-
 
     _callApi() {
         this.questions = [];
