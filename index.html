@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>Angular2 demo by @Auth0</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="/resources/vendor/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/resources/styles/custom.css">
+
+</head>
+
+<body>
+    <dipinto-app>
+        <div class="ui active centered large inline loader text">Loading Dipinto</div>
+    </dipinto-app>
+
+    <!-- Commmon files to be cached -->
+    <script src="/build/common.js"></script>
+    <!-- Angular2 files -->
+    <script src="/build/vendor.js"></script>
+    <!-- App script -->
+    <script src="/build/app.js"></script>
+
+    <!-- Google Fonts -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Kaushan+Script::latin']
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+</body>
+
+</html>

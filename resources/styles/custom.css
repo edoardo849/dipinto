@@ -1,0 +1,20 @@
+.logo {
+    font-family: 'Kaushan Script', cursive !important;
+}
+
+h1.logo{
+    font-size: 3rem !important;
+}
+.ui.header.logo:first-child {
+    padding-top:0.5em;
+    padding-bottom:0.7em;
+
+}
+
+.ui.list .list>.item, .ui.list>.item, ol.ui.list li, ul.ui.list li {
+    padding-top: 0.5em !important;
+}
+
+#footer p {
+    text-align: center;
+}
