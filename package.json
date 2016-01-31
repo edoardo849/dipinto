@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:edoardo849/dipinto.git"
+    "url": "https://github.com/edoardo849/dipinto"
   },
   "contributors": [
     "Edoardo Paolo Scalafiotti <edoardo849@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://bitbucket.org/edoardo849/dipinto",
+  "homepage": "https://github.com/edoardo849/dipinto",
   "dependencies": {
     "angular2": "2.0.0-beta.0",
     "es6-promise": "^3.0.2",
