@@ -21,26 +21,8 @@ cd dipinto
 
 You will need to open **2 terminal tabs**: one is for running Angular2, the other for the Express server. From now on, the root location in the terminal will always be the `/dipinto` project directory.
 
-1) In the **first tab** (Angular2)
 
-```bash
-# Install the dependencies for the App
-npm install
-
-# Install semantic ui
-npm install semantic-ui --save
-cd resources/vendor/semantic
-gulp build
-
-# Return to the root
-cd ../../..
-
-# Start the webpack dev server
-npm start
-```
-If you are having trouble installing semantic-ui, please follow the [getting started guide](http://semantic-ui.com/introduction/getting-started.html).
-
-2) In the **second tab** (Express)
+1) In the **first tab** (Express)
 
 ```bash
 # Enter in the server directory
@@ -55,6 +37,17 @@ cd ..
 # Start the server
 npm run server
 ```
+
+2) In the **second tab** (Angular2)
+
+```bash
+# Install the dependencies for the App
+npm install
+
+# Start the webpack dev server
+npm start
+```
+
 
 Dipinto is now running at [http://localhost:3000](http://localhost:3000)
 

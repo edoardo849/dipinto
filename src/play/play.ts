@@ -56,12 +56,14 @@ export class Play implements OnActivate {
         return this._callApi();
     }
 
-    handleResponse(rsp : Question) {
+    reloadQuestion() {
+        this._callApi();
+    }
+
+    handleResponse(rsp: Question) {
         this.hasAnswered = true;
         this.isCorrect = rsp.correct;
         this.questions.forEach(question => question.isDisabled = true);
-
-        console.log(rsp);
     }
 
     _callApi() {
