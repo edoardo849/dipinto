@@ -30,9 +30,18 @@ npm install -g gulp
 # Install the dependencies for the App
 npm install
 
+# Install semantic ui
+npm install semantic-ui --save
+cd resources/vendor/semantic
+gulp build
+
+# Return to the root
+cd ../../..
+
 # Start the webpack dev server
 npm start
 ```
+If you are having trouble installing semantic-ui, please follow the [getting started guide](http://semantic-ui.com/introduction/getting-started.html).
 
 2) In the **second tab** (Express)
 
