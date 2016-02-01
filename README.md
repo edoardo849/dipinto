@@ -24,9 +24,6 @@ You will need to open **2 terminal tabs**: one is for running Angular2, the othe
 1) In the **first tab** (Angular2)
 
 ```bash
-# Install gulp globally
-npm install -g gulp
-
 # Install the dependencies for the App
 npm install
 
