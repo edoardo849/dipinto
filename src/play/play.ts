@@ -42,14 +42,13 @@ export class Play implements OnActivate {
 
     constructor(public router: Router, public http: Http) {
         this.questionPoolSize = 4;
-        this.hasAnswered = false;
-        this.isCorrect = false;
 
         this.emitter.subscribe(rsp => {
             this.handleResponse(rsp);
         });
 
         this._setupGame();
+        this._setupQuestion();
     }
 
     routerOnActivate(to: ComponentInstruction, from: ComponentInstruction) {
@@ -57,6 +56,7 @@ export class Play implements OnActivate {
     }
 
     reloadQuestion() {
+        this._setupQuestion();
         this._callApi();
     }
 
@@ -66,7 +66,7 @@ export class Play implements OnActivate {
         this.questions.forEach(question => question.isDisabled = true);
     }
 
-    _callApi() {
+    private _callApi() : Promise<any> {
         this.questions = [];
         return new Promise((resolve) => {
             this
@@ -97,11 +97,20 @@ export class Play implements OnActivate {
     }
 
     /**
+     * Reset the question for when the game starts
+     * or for when the user clicks on the next button 
+     */
+    private _setupQuestion() : void {
+        this.hasAnswered = false;
+        this.isCorrect = false;
+    }
+
+    /**
      * Setup the game for when the game starts or
      * for when the game is restarted again.
      * Useful in future releases of the game
      */
-    _setupGame(): void {
+    private _setupGame(): void {
         this.trials = 0;
         this.points = 0;
         this.challenge = {};

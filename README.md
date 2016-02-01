@@ -14,6 +14,7 @@ All the images are taken from the Google Art Project.
 ### Requirements
 - NodeJS
 - NPM
+- GIT
 
 This procedure is based on a UNIX system (on a Ubuntu 15.10 machine): it should work without problems on Macs too.
 
@@ -28,10 +29,10 @@ cd dipinto
 From now on, the root location in the terminal will always be the `/dipinto` project directory.
 
 ```bash
-# Install the dependencies for the App
+# Install the dependencies for the App, this will take a while
 npm install
 
-# Enter in the server directory
+# Enter in the server directory, this should be quick
 cd backend
 
 # Install the dependencies for the server
