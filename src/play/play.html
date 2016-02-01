@@ -1,25 +1,4 @@
 <div class="ui two column centered grid container">
-
-    <div class="column">
-        <div class="ui raised segment" >
-            <span class="ui blue ribbon label">Guess the painting</span>
-
-            <div class="ui aligned divided list huge">
-                <dipinto-question class="item" *ngFor="#question of questions" [question]="question">
-                </dipinto-question>
-            </div>
-
-            <div class="row">
-                <br/>
-                <button class="ui primary right labeled icon button" (click)="reloadQuestion()">
-                    <i class="right arrow icon"></i> Next
-                </button>
-
-            </div>
-        </div>
-
-    </div>
-
     <div class="column ">
         <div [ngClass]="{
                 black : !hasAnswered,
@@ -30,16 +9,26 @@
                 <img [attr.src]="challenge.image">
             </div>
             <div class="content">
-
                 <div class="header">
                     <span *ngIf="hasAnswered">{{challenge.title}}</span>
-                    <span *ngIf="!hasAnswered">???</span>
                 </div>
                 <div class="meta">
                     <span class="date">
                         <span *ngIf="hasAnswered">{{challenge.creator}}</span>
-                    <span *ngIf="!hasAnswered">???</span>
                     </span>
+                </div>
+                <div class="description" >
+                    <div class="ui aligned divided list">
+                        <dipinto-question class="item" *ngFor="#question of questions" [question]="question">
+                        </dipinto-question>
+                    </div>
+                    <div class="row">
+                        <br/>
+                        <button class="ui primary right labeled icon button" (click)="reloadQuestion()">
+                            <i class="right arrow icon"></i> Next
+                        </button>
+
+                    </div>
                 </div>
 
             </div>
