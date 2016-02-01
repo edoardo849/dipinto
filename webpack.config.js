@@ -26,8 +26,6 @@ module.exports = {
       'angular2/http',
       // RxJS
       'rxjs',
-      // Other
-      'angular2-jwt'
     ],
     'app': [
       './src/index'
