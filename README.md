@@ -60,7 +60,7 @@ npm start
 # Wait for it...
 ```
 
-When the `webpack: bundle is now VALID` message appears, Dipinto will be up & running at [http://localhost:3000](http://localhost:3000)
+When the `webpack: bundle is now VALID` message appears, Dipinto will be up & running at [http://localhost:3000](http://localhost:3000). You can see a live demo here: [http://dipinto.icomarini.com](http://dipinto.icomarini.com/)
 
 ### Updates
 In order to keep project up-to-date, just pull from the repository:
