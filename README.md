@@ -19,7 +19,7 @@ This procedure is based on a UNIX system (on a Ubuntu 15.10 machine): it should 
 
 ```bash
 # Clone the latest branch
-$ git clone git@github.com:edoardo849/dipinto.git
+git clone git@github.com:edoardo849/dipinto.git
 
 # Enter in the dipinto project directory
 cd dipinto
