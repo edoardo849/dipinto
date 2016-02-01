@@ -98,7 +98,7 @@ export class Play implements OnActivate {
 
     /**
      * Reset the question for when the game starts
-     * or for when the user clicks on the next button 
+     * or for when the user clicks on the next button
      */
     private _setupQuestion() : void {
         this.hasAnswered = false;

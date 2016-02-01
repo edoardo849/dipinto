@@ -62,6 +62,14 @@ npm start
 
 When the `webpack: bundle is now VALID` message appears, Dipinto will be up & running at [http://localhost:3000](http://localhost:3000)
 
+### Updates
+In order to keep project up-to-date, just pull from the repository:
+
+```bash
+# Pull from the Github repository
+git pull origin master
+```
+
 ## Next steps
 - Improvement of the random algorithm on the server (it should not be possible to return equal results)
 - GoLang server
