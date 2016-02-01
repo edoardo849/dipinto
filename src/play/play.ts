@@ -71,8 +71,7 @@ export class Play implements OnActivate {
         return new Promise((resolve) => {
             this
                 .http
-                .get(`http://localhost:3001/api/random-painting?n=
-                        ${this.questionPoolSize}`
+                .get(`http://localhost:3001/api/random-painting?n=${this.questionPoolSize}`
                 )
                 .map(response => response.json())
                 .subscribe(
